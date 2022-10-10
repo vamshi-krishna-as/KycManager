@@ -13,7 +13,7 @@ public class SD_KYC_FIELD_TYPES
 {
 	@Id
 	@Column(name = "ID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Byte iD;
 	
 	@Column(name = "NAME")
@@ -56,7 +56,4 @@ public class SD_KYC_FIELD_TYPES
 	{
 		return "SD_KYC_FIELD_TYPES [iD=" + iD + ", name=" + name + "]";
 	}
-	
-	
-
 }
