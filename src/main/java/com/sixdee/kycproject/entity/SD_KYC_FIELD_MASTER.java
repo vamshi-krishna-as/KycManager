@@ -7,8 +7,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 @Entity
 @Table(name = "SD_KYC_FIELD_MASTER ")
+
 public class SD_KYC_FIELD_MASTER 
 {
 	@Id
@@ -25,61 +33,50 @@ public class SD_KYC_FIELD_MASTER
 	@Column(name = "TAG_TYPE")
 	private int tagType;
 	
-	@Column(name = "DROP_DOWN")
+	@Column(name = "DROPDOWN")
 	private String dropDown;
 
-	public int getFieldId() 
-	{
+	public int getFieldId() {
 		return fieldId;
 	}
 
-	public void setFieldId(int fieldId) 
-	{
+	public void setFieldId(int fieldId) {
 		this.fieldId = fieldId;
 	}
 
-	public String getFieldName()
-	{
+	public String getFieldName() {
 		return fieldName;
 	}
 
-	public void setFieldName(String fieldName)
-	{
+	public void setFieldName(String fieldName) {
 		this.fieldName = fieldName;
 	}
 
-	public int getFieldType()
-	{
+	public int getFieldType() {
 		return fieldType;
 	}
 
-	public void setFieldType(int fieldType)
-	{
+	public void setFieldType(int fieldType) {
 		this.fieldType = fieldType;
 	}
 
-	public int getTagType()
-	{
+	public int getTagType() {
 		return tagType;
 	}
 
-	public void setTagType(int tagType) 
-	{
+	public void setTagType(int tagType) {
 		this.tagType = tagType;
 	}
 
-	public String getDropDown()
-	{
+	public String getDropDown() {
 		return dropDown;
 	}
 
-	public void setDropDown(String dropDown) 
-	{
+	public void setDropDown(String dropDown) {
 		this.dropDown = dropDown;
 	}
 
-	public SD_KYC_FIELD_MASTER(int fieldId, String fieldName, int fieldType, int tagType, String dropDown)
-	{
+	public SD_KYC_FIELD_MASTER(int fieldId, String fieldName, int fieldType, int tagType, String dropDown) {
 		super();
 		this.fieldId = fieldId;
 		this.fieldName = fieldName;
@@ -88,15 +85,15 @@ public class SD_KYC_FIELD_MASTER
 		this.dropDown = dropDown;
 	}
 
-	public SD_KYC_FIELD_MASTER() 
-	{
+	public SD_KYC_FIELD_MASTER() {
 		super();
 	}
 
 	@Override
-	public String toString() 
-	{
+	public String toString() {
 		return "SD_KYC_FIELD_MASTER [fieldId=" + fieldId + ", fieldName=" + fieldName + ", fieldType=" + fieldType
 				+ ", tagType=" + tagType + ", dropDown=" + dropDown + "]";
 	}
+	
+	
 }

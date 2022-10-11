@@ -1,5 +1,7 @@
 package com.sixdee.kycproject.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,4 +37,33 @@ public class KycService
 		groupRepo.save(var2);
 	}
 	
+	public List<SD_KYC_FIELD_MASTER> getKycFiedMaster() 
+	{
+		return masterRepo.findAll();
+	}
+	
+	public List<SD_KYC_FIELD_TYPES> getKycFiedTypes() 
+	{
+		return typesRepo.findAll();
+	}
+	
+	public List<SD_KYC_GROUPS> getKycGroup() 
+	{
+		return groupRepo.findAll();
+	}
+	
+	public void deleteKycFiledMaster(int id) 
+	{
+		masterRepo.deleteById(id);
+	}
+	
+	public void deleteKycFieldTypes(Byte id) 
+	{
+		typesRepo.deleteById(id);
+	}
+	
+	public void deleteKycGroups(Byte id) 
+	{
+		typesRepo.deleteById(id);
+	}
 }

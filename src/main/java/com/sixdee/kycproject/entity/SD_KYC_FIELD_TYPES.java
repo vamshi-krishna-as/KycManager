@@ -7,8 +7,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 @Entity
 @Table(name = "SD_KYC_FIELD_TYPES")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class SD_KYC_FIELD_TYPES 
 {
 	@Id
@@ -18,42 +27,4 @@ public class SD_KYC_FIELD_TYPES
 	
 	@Column(name = "NAME")
 	private String name;
-
-	public Byte getiD() 
-	{
-		return iD;
-	}
-
-	public void setiD(Byte iD)
-	{
-		this.iD = iD;
-	}
-
-	public String getName() 
-	{
-		return name;
-	}
-
-	public void setName(String name) 
-	{
-		this.name = name;
-	}
-
-	public SD_KYC_FIELD_TYPES(Byte iD, String name) 
-	{
-		super();
-		this.iD = iD;
-		this.name = name;
-	}
-
-	public SD_KYC_FIELD_TYPES()
-	{
-		super();
-	}
-
-	@Override
-	public String toString() 
-	{
-		return "SD_KYC_FIELD_TYPES [iD=" + iD + ", name=" + name + "]";
-	}
 }
