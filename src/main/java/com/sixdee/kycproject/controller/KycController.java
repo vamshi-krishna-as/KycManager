@@ -27,18 +27,6 @@ public class KycController
 		service.addKycFieldMaster(var1);
 	}
 	
-	@PostMapping("/addKycFieldTypes")
-	public void addKycFieldTypes(@RequestBody SD_KYC_FIELD_TYPES var2)
-	{
-		service.addKycFieldTypes(var2);
-	}
-	
-	@PostMapping("/addKycGroups")
-	public void addKycGroups(@RequestBody SD_KYC_GROUPS var3)
-	{
-		service.addKycGroups(var3);
-	}
-	
 	@GetMapping("/getKycFiedMaster")
 	public List<SD_KYC_FIELD_MASTER> getKycFiedMaster() 
 	{

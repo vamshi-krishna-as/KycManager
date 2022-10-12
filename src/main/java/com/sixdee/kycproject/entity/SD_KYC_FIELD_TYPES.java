@@ -14,17 +14,44 @@ import lombok.ToString;
 
 @Entity
 @Table(name = "SD_KYC_FIELD_TYPES")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
+
 public class SD_KYC_FIELD_TYPES 
 {
 	@Id
 	@Column(name = "ID")
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Byte iD;
+	private int iD;
 	
 	@Column(name = "NAME")
 	private String name;
+
+	public int getiD() {
+		return iD;
+	}
+
+	public void setiD(int iD) {
+		this.iD = iD;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public SD_KYC_FIELD_TYPES(int iD, String name) {
+		super();
+		this.iD = iD;
+		this.name = name;
+	}
+
+	public SD_KYC_FIELD_TYPES() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "SD_KYC_FIELD_TYPES [iD=" + iD + ", name=" + name + "]";
+	}
 }

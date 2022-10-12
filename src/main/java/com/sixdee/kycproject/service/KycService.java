@@ -27,15 +27,6 @@ public class KycService
 		masterRepo.save(var);
 	}
 	
-	public void addKycFieldTypes(SD_KYC_FIELD_TYPES var1) 
-	{
-		typesRepo.save(var1);
-	}
-	
-	public void addKycGroups(SD_KYC_GROUPS var2) 
-	{
-		groupRepo.save(var2);
-	}
 	
 	public List<SD_KYC_FIELD_MASTER> getKycFiedMaster() 
 	{
