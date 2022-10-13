@@ -22,9 +22,10 @@ public class KycService
 	@Autowired
 	private KycGroupsRepo groupRepo;
 	
-	public void addKycFieldMaster(SD_KYC_FIELD_MASTER var)
+	public int addKycFieldMaster(SD_KYC_FIELD_MASTER var)
 	{
 		masterRepo.save(var);
+		return 0;
 	}
 	
 	

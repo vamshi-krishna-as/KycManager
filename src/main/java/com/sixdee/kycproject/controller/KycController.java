@@ -22,9 +22,10 @@ public class KycController
 	private KycService service;
 	
 	@PostMapping("/addKycFieldMaster")
-	public void addKycFieldMaster(@RequestBody SD_KYC_FIELD_MASTER var1)
+	public int addKycFieldMaster(@RequestBody SD_KYC_FIELD_MASTER var1)
 	{
 		service.addKycFieldMaster(var1);
+		return 0;
 	}
 	
 	@GetMapping("/getKycFiedMaster")
@@ -61,9 +62,5 @@ public class KycController
 	public void deleteKycGroups(@PathVariable("iD") Byte iD) 
 	{
 		service.deleteKycGroups(iD);
-	}
-	
-	
-	
-	
+	}	
 }

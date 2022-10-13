@@ -22,7 +22,6 @@ import lombok.ToString;
 
 @Entity
 @Table(name = "SD_KYC_FIELD_MASTER ")
-
 public class SD_KYC_FIELD_MASTER 
 {
 	@Id
