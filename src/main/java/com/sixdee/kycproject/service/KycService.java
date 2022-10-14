@@ -49,13 +49,13 @@ public class KycService
 		masterRepo.deleteById(id);
 	}
 	
-	public void deleteKycFieldTypes(Byte id) 
+	public void deleteKycFieldTypes(int iD) 
 	{
-		typesRepo.deleteById(id);
+		typesRepo.deleteById(iD);
 	}
 	
-	public void deleteKycGroups(Byte id) 
+	public void deleteKycGroups(int iD) 
 	{
-		typesRepo.deleteById(id);
+		groupRepo.deleteById(iD);
 	}
 }

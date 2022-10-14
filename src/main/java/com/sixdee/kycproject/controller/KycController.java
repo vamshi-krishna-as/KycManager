@@ -53,13 +53,13 @@ public class KycController
 	}
 	
 	@DeleteMapping("/deleteKycFieldTypes/{iD}")
-	public void deleteKycFieldTypes(@PathVariable("iD") Byte iD) 
+	public void deleteKycFieldTypes(@PathVariable("iD") int iD) 
 	{
 		service.deleteKycFieldTypes(iD);
 	}
 	
 	@DeleteMapping("/deleteKycFieldMaster/{iD}")
-	public void deleteKycGroups(@PathVariable("iD") Byte iD) 
+	public void deleteKycGroups(@PathVariable("iD") int iD) 
 	{
 		service.deleteKycGroups(iD);
 	}	
