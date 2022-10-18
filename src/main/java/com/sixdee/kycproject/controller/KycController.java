@@ -27,37 +27,31 @@ public class KycController
 		service.addKycFieldMaster(var1);
 		return 0;
 	}
-	
 	@GetMapping("/getKycFiedMaster")
 	public List<SD_KYC_FIELD_MASTER> getKycFiedMaster() 
 	{
 		return service.getKycFiedMaster();
 	}
-	
 	@GetMapping("/getKycFiedTypes")
 	public List<SD_KYC_FIELD_TYPES> getKycFiedTypes() 
 	{
 		return service.getKycFiedTypes();
 	}
-	
 	@GetMapping("/getKycGroup")
 	public List<SD_KYC_GROUPS> getKycGroup() 
 	{
 		return service.getKycGroup();
 	}
-	
 	@DeleteMapping("/deleteKycFieldMaster/{fieldId}")
 	public void deleteKycFieldMaster(@PathVariable("fieldId") int fieldId) 
 	{
 		service.deleteKycFiledMaster(fieldId);
 	}
-	
 	@DeleteMapping("/deleteKycFieldTypes/{iD}")
 	public void deleteKycFieldTypes(@PathVariable("iD") int iD) 
 	{
 		service.deleteKycFieldTypes(iD);
 	}
-	
 	@DeleteMapping("/deleteKycFieldMaster/{iD}")
 	public void deleteKycGroups(@PathVariable("iD") int iD) 
 	{
