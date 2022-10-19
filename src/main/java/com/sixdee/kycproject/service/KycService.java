@@ -49,6 +49,9 @@ public class KycService
 		masterRepo.deleteById(id);
 	}
 	
+//	public void deleteKycFiledMaster(int id) {
+//		masterRepo.deleteAll();
+//	}
 	public void deleteKycFieldTypes(int iD) 
 	{
 		typesRepo.deleteById(iD);
